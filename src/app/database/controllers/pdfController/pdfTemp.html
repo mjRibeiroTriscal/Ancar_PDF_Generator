@@ -1,0 +1,476 @@
+<head>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900");
+		@page {
+			size: A4 landscape;
+			margin: 0cm;
+		}
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Poppins", sans-serif;
+		}
+		.page {
+			width: 100%;
+			height: 100%;
+			page-break-before: always;
+			page-break-inside: avoid;
+			box-shadow: inset 0 0 2px 2px #00000055, inset 0 0 4px 4px #00000055;
+		}
+		.page-1 .title {
+			color: red;
+			font-size: 2.5rem;
+			padding-bottom: 1rem;
+			text-align: left;
+		}
+		.page-1 tr td {
+			display: flex;
+			align-items: center;
+			justify-content: baseline;
+		}
+		/* .page-5 tr td,
+		.page-6 tr td {
+			font-size: larger;
+			width: 100%;
+		}
+		.page-5 tr td.topic,
+		.page-6 tr td.topic {
+			width: auto;
+			white-space: nowrap;
+		}
+		.page-5 tr {
+			min-height: 1.5cm;
+		}
+		.page-6 tr {
+			min-height: 1cm;
+		}
+		.page-6 tr th {
+			text-align: center;
+			padding-bottom: 1.5cm;
+		} */
+		.content {
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		/* .logo {
+			max-width: 200px;
+			max-height: 100px;
+		}
+		.image-cover {
+			margin: auto !important;
+			height: 100%;
+		}
+		.image-cover > img {
+			margin: auto !important;
+			width: auto !important;
+			height: 100% !important;
+		} */
+		.full-width-img {
+			width: 90%;
+			/* width: -webkit-fill-available; */
+		}
+		/* .image-contain {
+			margin: auto !important;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+		} */
+		.image-contain > .planta {
+			/* margin: auto!important; */
+			/* margin: 15% auto;
+			width: 90% !important;
+			height: auto !important; */
+		}
+		.image-contain > .planta-loja,
+		.planta-loja-info-container {
+			/* display: inline-block; */
+		}
+		.image-contain > .planta-loja {
+			/* margin: auto!important; */
+			/* margin: 15% auto;
+			width: 55%;
+			height: auto !important; */
+		}
+		/* .planta-loja-info-container {
+			width: 30%;
+		}
+		tr {
+			min-height: 0.75cm;
+		}
+		tr th {
+			text-transform: uppercase;
+			color: red;
+		}
+		tr.title th {
+			margin-bottom: 5%;
+		}
+		.topic {
+			font-weight: 700;
+			color: red;
+		}
+		.topic.light-weight {
+			font-weight: 500;
+		}
+		.no-wrap-line {
+			white-space: nowrap;
+		}
+		.page-footer {
+			width: 100%;
+			height: 2cm;
+		}
+		.page-footer > .footer-logo {
+			height: 100% !important;
+			padding: 1cm;
+		} */
+		/* .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        } */
+	</style>
+</head>
+<body>
+	<!-- Capa -->
+	<div class="page">
+		<div class="content cover">
+			<img src="[urlLogo]" width="30%" alt="Logo" class="logo" />
+		</div>
+	</div>
+
+	<!-- Page 1 -->
+	<div class="page page-1">
+		<div class="content">
+			<table style="width: 98%; min-height: 98%; margin: 1%">
+				<tr>
+					<th colspan="2" class="title">[NomeShopping]</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img
+							class="full-width-img"
+							src="[ImagemFachada]"
+							alt="Fachada"
+						/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- Page 2 -->
+	<div class="page">
+		<div class="content" style="min-height: 100%">
+			<table
+				style="
+					width: 90%;
+					min-height: 90%;
+					vertical-align: middle;
+					text-align: center;
+					margin: 5%;
+				"
+			>
+				<tr
+					style="
+						min-height: 100%;
+						vertical-align: middle;
+						text-align: center;
+					"
+				>
+					<td
+						style="
+							min-height: 100%;
+							vertical-align: middle;
+							text-align: center;
+						"
+					>
+						<img
+							class="full-width-img"
+							src="[ImagemFachada]"
+							alt="Planta"
+						/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- Page 3 -->
+	<!-- <div class="page">
+		<div class="content">
+			<div class="image-contain">
+				<img
+					src="[urlImagemFachada]"
+					width="60%"
+					height="100%"
+					alt="Planta Loja"
+					class="planta-loja"
+				/>
+				<div class="planta-loja-info-container">
+					<p>*ÁREA TÉRREA: 532,97 m²</p>
+					<p>*ÁREA MEZANINO: 300 m²</p>
+					<p>*ÁREA TOTAL: 829,36 m²</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- Page 4 -->
+	<!-- <div class="page">
+		<div class="content"> -->
+	<!--
+                Obs.:
+                Precisamos que conste essas informações no PDF e só deve aparecer os campos preenchidos na proposta, caso alguma 
+                Dessas condições estejam em branco na proposta não aparecerá no pdf.
+            -->
+	<!-- <table style="width: 94%; margin: 2% 3% 0% 3%">
+				<tr class="title">
+					<th colspan="5">
+						<h2>Condições Comerciais</h2>
+					</th>
+				</tr>
+
+				<tr>
+					<td class="topic">Shopping:</td>
+					<td>Natal Shopping</td>
+
+					<td></td>
+
+					<td class="topic">Marca:</td>
+					<td>Nome da Marca</td>
+				</tr>
+
+				<tr>
+					<td class="topic">LUC:</td>
+					<td>Loungerie - NAT</td>
+
+					<td></td>
+
+					<td class="topic">Área:</td>
+					<td>Loungerie - NAT</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Localização:</td>
+					<td>2º Piso</td>
+
+					<td></td>
+
+					<td class="topic">Prazo Contratual:</td>
+					<td>10 de Janeiro de 2024</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Vigência:</td>
+					<td>15 de Janeiro de 2024</td>
+
+					<td></td>
+
+					<td class="topic">CTO:</td>
+					<td>Valor CTO</td>
+				</tr>
+
+				<tr>
+					<td style="padding-top: 0.6cm" class="topic">
+						Aluguel Mínimo Mensal (AMM):
+					</td>
+				</tr>
+
+				<tr>
+					<td style="padding-bottom: 0.6cm">
+						<table>
+							<tr>
+								<td class="topic light-weight no-wrap-line">
+									1º e 2º anos:
+								</td>
+								<td class="no-wrap-line">
+									R$ 400,00 m² - (AMM por M² ou absoluto)
+								</td>
+							</tr>
+
+							<tr>
+								<td class="topic light-weight no-wrap-line">
+									3º e 4º anos:
+								</td>
+								<td class="no-wrap-line">R$ 440,00 m²</td>
+							</tr>
+
+							<tr>
+								<td class="topic light-weight no-wrap-line">
+									5º ano:
+								</td>
+								<td class="no-wrap-line">R$ 484,00 m²*</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Aluguel Percentual (%):</td>
+					<td>10%</td>
+
+					<td></td>
+
+					<td class="topic">Aluguel Dobrado:</td>
+					<td>R$ 10.000,00</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Índice de Reajuste:</td>
+					<td>7%</td>
+
+					<td></td>
+
+					<td class="topic">Carência:</td>
+					<td>60 dias no AMM.</td>
+				</tr>
+
+				<tr>
+					<td class="topic">FPP:</td>
+					<td>20%</td>
+
+					<td></td>
+
+					<td class="topic">Condomínio (encargos comuns):</td>
+					<td>Valor de Condomínio</td>
+				</tr>
+
+				<tr>
+					<td class="topic">CRD:</td>
+					<td>Valor de CRD</td>
+
+					<td></td>
+
+					<td class="topic">RES:</td>
+					<td>Valor de RES</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Forma de Pagamento RES:</td>
+					<td>Valor de Forma de Pagamento RES</td>
+
+					<td></td>
+
+					<td class="topic">Mídia Inaugural:</td>
+					<td>Valor de Mídia Inaugural</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Forma de Pagamento Mídia Inaugural:</td>
+					<td>Valor de Forma de Pagamento Mídia Inaugural</td>
+
+					<td></td>
+				</tr>
+			</table>
+
+			<div class="page-footer">
+				<div class="footer-logo" />
+			</div> -->
+	<!-- </div>
+	</div> -->
+
+	<!-- Page 5 -->
+	<!-- <div class="page page-5">
+		<div class="content"> -->
+	<!--
+                Lembrar:
+                O TD será preenchido,  totalmente, pelo campo Observação, da proposta.
+            -->
+	<!-- <table style="width: 94%; margin: 3%">
+				<tr class="title">
+					<th>
+						<h1>Observações</h1>
+					</th>
+				</tr>
+
+				<tr>
+					<td>Condomínio de acordo com o CRD;</td>
+				</tr>
+
+				<tr>
+					<td>
+						Proposta CTO 10% nos dois primeiros anos, com garantia
+						mínima de R$ 13.000,00; terceiro ano a média do segundo
+						ano com garantia mínima de R$17.000,00; quarto e quinto
+						anos AMM 100/m².
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Específicas (água, energia, ar-condicionado e IPTU) não
+						estão inclusos - Água e energia conforme consumo;
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Proposta a ser enviada ao comitê para aprovação das
+						bases comerciais.
+					</td>
+				</tr>
+			</table> -->
+	<!-- </div>
+	</div> -->
+
+	<!-- Page 6 -->
+	<!-- <div class="page page-6">
+		<div class="content"> -->
+	<!--
+                Lembrar:
+                O TD será preenchido,  totalmente, pelo campo Observação, da proposta.
+            -->
+	<!-- <table style="width: 94%; margin: 2% 3% 0% 3%">
+				<tr class="title">
+					<th colspan="2">
+						<h1>Informações da Cotação</h1>
+					</th>
+				</tr>
+
+				<tr>
+					<td class="topic">Shopping:</td>
+					<td>Natal Shopping</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Sigla do Shopping:</td>
+					<td>NAT</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Número da Cotação:</td>
+					<td>00027628</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Tipo de Cotação:</td>
+					<td>Cotacao_Loja</td>
+				</tr>
+
+				<tr>
+					<td class="topic">E-mail do Cliente:</td>
+					<td>marcelolacerda@franquiado.com.br</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Nome do Executivo:</td>
+					<td>Ana Lúcia Teixeira</td>
+				</tr>
+
+				<tr>
+					<td class="topic">Telefone do Executivo:</td>
+					<td>(011) 99858.8347</td>
+				</tr>
+
+				<tr>
+					<td class="topic">E-mail do Executivo:</td>
+					<td>ana.teixeira@ancar.com.br</td>
+				</tr>
+			</table> -->
+	<!-- </div>
+	</div> -->
+</body>
