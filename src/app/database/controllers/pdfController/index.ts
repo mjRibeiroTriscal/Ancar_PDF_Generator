@@ -164,7 +164,6 @@ export default {
 
 
 
-
 			// console.log('1)', htmlTemp);
 
 			// // Renderiza o HTML em um elemento temporário
